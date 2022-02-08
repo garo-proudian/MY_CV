@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding-right: 0;
+    box-sizing: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+section > h1 {
+  text-transform: uppercase;
+    letter-spacing: 0.625rem;
+}
+section{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    scroll-snap-align: start;
+}
+
+
+#container{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+.one{
+    background-color:#051e3e;
+}
+.two{
+    background-color:#251e3e;
+}
+.tree{
+    background-color:#451e3e ;
+}
+.four{
+    background-color:#651e3e;
+}
+
+#button-back {
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    margin: 1rem 1rem;
+    border-radius: 10rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0.15rem;
+    transition: all 0.3s;
+    position: fixed;
+    overflow: hidden;
+    z-index: 1;
+  }
+  #button-back:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0cf;
+    border-radius: 10rem;
+    z-index: -2;
+  }
+  #button-back:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #008fb3;
+    transition: all 0.3s;
+    border-radius: 10rem;
+    z-index: -1;
+  }
+  #button-back:hover {
+    color: #fff;
+  }
+  #button-back:hover:before {
+    width: 100%;
+  }
+
+  
+  
